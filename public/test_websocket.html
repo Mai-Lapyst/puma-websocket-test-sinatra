@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Websocket test</title>
+        <meta charset="utf-8">
+        <style>
+            #eventLog {
+                margin-bottom: 10px;
+            }
+            #eventLog > .error {
+                color: red;
+            }
+            #sendText {
+                width: 500px;
+                height: 200px;
+            }
+        </style>
+    </head>
+    <body>
+        <button onclick="connect(4567)" id="connectBtn">Connect</button>
+        <button onclick="disconnect()" id="disconnectBtn" disabled>Disconnect</button>
+        <button onclick="changePingCb()" id="pingBtn">Enable ping/pong messages</button>
+        <br>
+        <textarea id="sendText" disabled></textarea>
+        <br>
+        <button id="sendBtn" onclick="send_text()" disabled>Senden</button>
+        <hr>
+
+        <div id="eventLog">
+            <strong>Event Log</strong>
+        </div>
+
+        <script src="./test_websocket.js"></script>
+    </body>
+</html>

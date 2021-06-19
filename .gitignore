@@ -1,0 +1,4 @@
+# ignore puma dev files
+puma.pid
+puma.state
+puma.sock
